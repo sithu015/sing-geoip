@@ -52,5 +52,5 @@ jobs:
           files: |
             geoip.db
             geoip.db.sha256sum
-            geoip-cn.db
-            geoip-cn.db.sha256sum
+            geoip-mm.db
+            geoip-mm.db.sha256sum
