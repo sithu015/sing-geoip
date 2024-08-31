@@ -208,11 +208,11 @@ func release(source string, destination string, output string, ruleSetOutput str
 		return err
 	}
 
-	writer, err = newWriter(metadata, []string{"cn"})
+	writer, err = newWriter(metadata, []string{"mm"})
 	if err != nil {
 		return err
 	}
-	err = write(writer, countryMap, "geoip-cn.db", []string{"cn"})
+	err = write(writer, countryMap, "geoip-mm.db", []string{"mm"})
 	if err != nil {
 		return err
 	}
@@ -258,7 +258,7 @@ func setActionOutput(name string, content string) {
 }
 
 func main() {
-	err := release("Dreamacro/maxmind-geoip", "sagernet/sing-geoip", "geoip.db", "rule-set")
+	err := release("Dreamacro/maxmind-geoip", "sithu015/sing-geoip", "geoip.db", "rule-set")
 	if err != nil {
 		log.Fatal(err)
 	}
